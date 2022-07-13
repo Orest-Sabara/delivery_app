@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery app</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Maitree:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script crossorigin src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script crossorigin src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+</head>
+<body>
+
+
+<div class="page">
+
+<!--  ---Header---  -->
+        <div class="svg-container">
+            <svg viewbox="0 0 800 400" class="svg">
+                <path id="curve" fill="#075672" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+                </path>
+            </svg>
+        </div>
+
+        <header>
+            <h1>This is a Delivery app</h1>
+            <h4>	&#169; Orest Sabara</h4>
+            <br>
+            <br>
+            <div>
+                <h2>
+                    <span class="borderAwesome"><a href="#sh"><i class="fa-solid fa-shop"></i></i> Магазин</a></span>
+                    <span class="borderAwesome"><a href="about.html"><i class="fa-solid fa-percent"></i> Акції</a></span>
+                </h2>
+            </div>
+        </header>
+
+<!--  main  -->
+        <main>
+            <a href="" name="sh"></a>
+            <ul class="tabs-block">
+                <div class="label"></div>
+                <li class="active" data-menu="1">McDonald`s</li>
+                <li data-menu="2">KFC</li>
+                <li data-menu="3">Burger King</li>
+                <li data-menu="4">Taco Bell</li>
+            </ul>
+            <div class="article-block">
+                <div class="article num_1 show">
+                    <div class="basket-products">
+                        <div class="item_box">
+                            <img src="assets/images/McD/BigMac.jfif" alt="BigMac" width="300" height="200">
+                            <h3 class="item_title">БІГ МАК</h3>
+                            <p>Ціна: <span class="item_price">120</span> грн</p>
+                            <button class="add_item" data-id="7">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/McD/CheeseBurger.jfif" alt="CheeseBurger" width="300" height="200">
+                            <h3 class="item_title">ЧІЗБУРГЕР</h3>
+                            <p>Ціна: <span class="item_price">45</span> грн</p>
+                            <button class="add_item" data-id="2">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/McD/McChicken.jfif" alt="McChicken" width="300" height="200">
+                            <h3 class="item_title">МАК ЧІКЕН</h3>
+                            <p>Ціна: <span class="item_price">87</span> грн</p>
+                            <button class="add_item" data-id="5">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/McD/McFlurry.jfif" alt="McFlurry" width="300" height="200">
+                            <h3 class="item_title">МАК ФЛУРІ</h3>
+                            <p>Ціна: <span class="item_price">49</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/McD/Nuggets.jfif" alt="Nuggets" width="300" height="200">
+                            <h3 class="item_title">НАГЕТСИ</h3>
+                            <p>Ціна: <span class="item_price">72</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="article num_2">
+                    <div class="basket-products">
+                        <div class="item_box">
+                            <img src="assets/images/KFC/ChBurg.jpg" alt="burger" width="300" height="300">
+                            <h3 class="item_title">ЧІЗБУРГЕР</h3>
+                            <p>Ціна: <span class="item_price">50</span> грн</p>
+                            <button class="add_item" data-id="7">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/KFC/Long.jpg" alt="longer" width="300" height="300">
+                            <h3 class="item_title">ЛОНГЕР</h3>
+                            <p>Ціна: <span class="item_price">35</span> грн</p>
+                            <button class="add_item" data-id="2">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/KFC/2Ch.jpg" alt="double chicken" width="300" height="300">
+                            <h3 class="item_title">ДАБЛ ЧІКЕН</h3>
+                            <p>Ціна: <span class="item_price">100</span> грн</p>
+                            <button class="add_item" data-id="5">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/KFC/roll.jpg" alt="roll" width="300" height="300">
+                            <h3 class="item_title">ШЕФ РОЛ</h3>
+                            <p>Ціна: <span class="item_price">80</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/KFC/basket-s.png" alt="basket-s" width="300" height="300">
+                            <h3 class="item_title">БАКЕТ S </h3>
+                            <p>Ціна: <span class="item_price">120</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="article num_3">
+                    <div class="basket-products">
+                        <div class="item_box">
+                            <img src="assets/images/BK/big-king.webp" alt="big king" width="300" height="200">
+                            <h3 class="item_title">БІГ КІНГ</h3>
+                            <p>Ціна: <span class="item_price">100</span> грн</p>
+                            <button class="add_item" data-id="7">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/BK/chBurg.webp" alt="cheese burger" width="300" height="200">
+                            <h3 class="item_title">ЧІЗБУРГЕР</h3>
+                            <p>Ціна: <span class="item_price">40</span> грн</p>
+                            <button class="add_item" data-id="2">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <img src="assets/images/BK/whopper.webp" alt="whopper" width="300" height="200">
+                            <h3 class="item_title">ВОППЕР</h3>
+                            <p>Ціна: <span class="item_price">100</span> грн</p>
+                            <button class="add_item" data-id="5">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">ШЕФ РОЛ</h3>
+                            <p>Ціна: <span class="item_price">80</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">КАРТОПЛЯ ФРІ </h3>
+                            <p>Ціна: <span class="item_price">45</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="article num_4">
+                    <div class="basket-products">
+                        <div class="item_box">
+                            <h3 class="item_title">TACOS</h3>
+                            <p>Ціна: <span class="item_price">99</span> грн</p>
+                            <button class="add_item" data-id="7">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">BURRITOS</h3>
+                            <p>Ціна: <span class="item_price">99</span> грн</p>
+                            <button class="add_item" data-id="2">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">CHICKEN QUESADILLA</h3>
+                            <p>Ціна: <span class="item_price">149</span> грн</p>
+                            <button class="add_item" data-id="5">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">CINNABON</h3>
+                            <p>Ціна: <span class="item_price">89</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+                        <div class="item_box">
+                            <h3 class="item_title">FRIES SUPREME </h3>
+                            <p>Ціна: <span class="item_price">69</span> грн</p>
+                            <button class="add_item" data-id="3">Добавити в корзину</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button id="checkout">Оформити заказ</button>
+                <button id="clear_cart">Очистити корзину</button>
+                <div id="cart_content"></div>
+            </div>
+
+        </main>
+
+<!--  Footer  -->
+        <footer>
+            <div class="div-footer">
+                <ul>
+                    <li><a href="https://twitter.com/?lang=uk">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100006334003652">Facebook</a></li>
+                    <li><a href="https://mail.google.com">Email</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://github.com/Orest-Sabara">Github</a></li>
+                    <li>
+                        <p>👋</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+<!-- script -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
